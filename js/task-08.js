@@ -17,3 +17,12 @@ const createBoxes = (amount) => {
   }
    return refs.boxes.insertAdjacentHTML('beforeend', boxes.join(''));
 }
+
+const destroyBoxes = () => {
+refs.boxes.innerHTML = "";
+refs.input.value = ""; 
+};
+
+
+refs.btnRender.addEventListener("click", event => createBoxes(refs.input.value));
+refs.btnDestroy.addEventListener("click", destroyBoxes);
