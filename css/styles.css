@@ -1,0 +1,17 @@
+li {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+}
+
+.gallery__item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
